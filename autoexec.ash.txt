@@ -1,0 +1,4 @@
+sleep 10
+busybox telnetd -l /bin/sh -p 80
+lu_util exec 'busybox pkill cherokee'
+lu_util exec 'busybox telnetd -l /bin/sh -p 80'
